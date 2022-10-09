@@ -1,2 +1,4 @@
 wersja 1
+<<<<<<< HEAD
 werjsa 3
+wersja 2
