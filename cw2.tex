@@ -1,0 +1,129 @@
+\documentclass[a4paper]{article}
+\author{Piotr Marzec 3 GRP}
+\title{Ćwiczenia nr.3 Latex}
+\usepackage[left=3.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm]{geometry}
+\usepackage[MeX]{polski}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage{amsmath} %pakiet matematyczny
+\usepackage{amssymb} %pakiet dodatkowych symboli
+\usepackage{float}
+\begin{document}
+\begin{center}
+    \begin{table}[H]
+        \centering\caption{Przykładowy system decyzyjny(U,A,d),modelujący problem diagnozy medycznej, której efektem jest decyzja o wykonaniu lub nie wykonaniu operacji wycięcia wyrostka robaczkowego, u=\{$u_1,u_2....u_10$\},a=\{$a_1,a_2$\},$d\in D$=\{TAK,NIE\} }
+        \begin{tabular}{c|c|c|c}
+             \hline
+             \hline
+           Pacjent & Ból brzucha & Temperatura ciała & Operacja\\
+           \hline
+           u1 & Mocny & Wysoka & Tak\\
+           u2 & Średn & Wysoka & Tak\\
+           u3 & Mocny & Średnia & Tak\\
+           u4 & Mocny & Niska & Tak \\
+           u5 & Średni & Średnia & Tak \\
+           u6 & Średni & Średnia & Nie \\
+           u7 & Mały & Wysoka & Nie \\
+           u8 & Mały & Niska & Nie \\
+           u9 & Mocny & Niska & Nie \\
+           u10 & Mały & Średnia & Nie \\
+           \hline
+           \hline
+        \end{tabular}
+    \end{table}
+    \begin{table}[H]
+        \centering\caption{Bramka NOT}
+        \begin{tabular}{|c|c|}
+            \hline
+             x&y  \\
+             \hline
+             0&1 \\
+             \hline
+             1&0 \\
+             \hline
+        \end{tabular}
+    \end{table}
+       \begin{table}[H]
+        \centering\caption{Bramka AND}
+        \begin{tabular}{|c|c|c|}
+            \hline
+             x&y&result  \\
+             \hline
+             0&1&0 \\
+             \hline
+             1&0&0 \\
+             \hline
+             0&0&0\\
+             \hline
+             1&1&1\\
+             \hline
+             \end{tabular}
+    \end{table}
+\begin{table}[H]
+        \centering\caption{Bramka NAND}
+        \begin{tabular}{|c|c|c|}
+            \hline
+             x&y&result  \\
+             \hline
+             0&1&1 \\
+             \hline
+             1&0&1 \\
+             \hline
+             0&0&1\\
+             \hline
+             1&1&0\\
+             \hline
+             \end{tabular}
+    \end{table}
+\begin{table}[H]
+        \centering\caption{Bramka OR}
+        \begin{tabular}{|c|c|c|}
+            \hline
+             x&y&result  \\
+             \hline
+             0&1&1 \\
+             \hline
+             1&0&1 \\
+             \hline
+             0&0&0\\
+             \hline
+             1&1&1\\
+             \hline
+             \end{tabular}
+    \end{table}
+\begin{table}[H]
+        \centering\caption{Bramka NOR}
+        \begin{tabular}{|c|c|c|}
+            \hline
+             x&y&result  \\
+             \hline
+             0&1&0 \\
+             \hline
+             1&0&0 \\
+             \hline
+             0&0&1\\
+             \hline
+             1&1&0\\
+             \hline
+             \end{tabular}
+    \end{table}
+\begin{table}[H]
+        \centering\caption{Bramka XOR}
+        \begin{tabular}{|c|c|c|}
+            \hline
+             x&y&result  \\
+             \hline
+             0&1&1 \\
+             \hline
+             1&0&1 \\
+             \hline
+             0&0&0\\
+             \hline
+             1&1&0\\
+             \hline
+             \end{tabular}
+    \end{table}
+\end{center}
+
+\end{document}
